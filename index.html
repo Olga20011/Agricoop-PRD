@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Agricoop PRD</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Agricoop PRD</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#agricoop" class="nav-link">AGRICOOP</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#objectivesgoals-of-agricoop-project" class="nav-link">Objectives/goals of agricoop project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#features-of-the-product" class="nav-link">Features of the product</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#development-requirements" class="nav-link">Development requirements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#flow-outline" class="nav-link">Flow Outline</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#system-and-environmental-requirements" class="nav-link">System and environmental requirements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#assumptions-constraints-and-dependencies" class="nav-link">Assumptions, Constraints, and Dependencies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<!-- # Welcome to MkDocs
+
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+
+## Commands
+
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs -h` - Print help message and exit.
+
+## Project layout
+
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files. -->
+<h1 id="agricoop">AGRICOOP</h1>
+<h2 id="objectivesgoals-of-agricoop-project">Objectives/goals of agricoop project</h2>
+<p>Agricoop is a group that aims to ensure Rwandan farmers who deal with the plantation of beans get paid on time by the cooperatives. Our solution is to create a web platform that will help cooperatives keep records and make payments since after conducting our research we realized that payments get delayed due to a lack of digitized systems that help them process details in a faster way.</p>
+<p><strong>What problems this product solves</strong>.</p>
+<p>Since there are no digital systems that promote a faster way of processing information, the project is dedicated to helping cooperatives process details of different groups of farmers who grow beans. The product will enable the cooperatives to make payments in time which will enable farmers to benefit from their farm produce.</p>
+<p><strong>Who will use the product?</strong></p>
+<p>The product will be used by the cooperatives in Rwanda that have registered to use the product and are dealing with buying and selling different beans from farmers.</p>
+<p><strong>Why is it important?</strong></p>
+<p>A big percentage of farmers in Rwanda do not get to benefit from their hard work since they do not have access to their money at the exact time that they want it. Agricoop will help farmers get their money in time and since there will be no delay in the process of taking in their products and getting paid since it will be done digitally compared to how it was being done manually hence take a lot of time.</p>
+<h2 id="features-of-the-product">Features of the product</h2>
+<p><strong>Making payments</strong></p>
+<p>The most important feature is the payments feature. It is enabled by some prior like taking off the group leader and farmer’s details. The payment system in use is the mtn mobile money which involves the use of API like the debit API which is responsible for sending money to the individual contact.</p>
+<p><strong>Group List</strong></p>
+<p>Another important feature of the platform is the group list. It enables the cooperative to view the list of groups that have been registered and also has the functionality of adding a new group. The cooperative is able to view the group because their information is stored in the database. Under group name, the drop-down seen displays the date of delivery, the quantity delivered and the variety of beans delivered.</p>
+<p><strong>The Beans page</strong></p>
+<p>This section is only viewed by the admin. It enables the tracking of deliveries in terms of variety, the total quantity purchased, the total amount paid for the beans.</p>
+<p><strong>User role management</strong></p>
+<p>Another critical feature of a professional dashboard application is the opportunity to assign different user roles and adjust various forms of access and data exploration. There are 4 main pillars you should look for: admin, viewer, power viewer, and user. Each of these roles has different workflow possibilities that make the analysis even easier:
+Admin: As in many other software and tools, the admin is the highest level of administration capability where s/he has the ultimate power to add other users, restrict data access or adjust the account in any way that s/he sees fit, e.g. assign filters for dashboard viewers, or add, delete and edit data sources and dashboards.</p>
+<p>Editor: The editor is one level lower than the admin; the difference is that s/he cannot delete data sources, but has access to dashboards, which s/he can edit or assign viewers’ access.</p>
+<p>Power viewer: This type of a viewer has access to a chart library that the admin assigned and s/he can edit the charts’ appearances, but can’t create a new chart on his/her own. The power viewer cannot manage the data source but can add other viewers, e.g. in bulk, if you have multiple sales managers or departments and bigger teams.</p>
+<h2 id="development-requirements">Development requirements</h2>
+<p><strong>Languages</strong></p>
+<ul>
+<li>Python</li>
+<li>HTML/CSS</li>
+<li>Bootstrap</li>
+</ul>
+<p><strong>Framework</strong></p>
+<p><strong>Django</strong></p>
+<p>It can work with any client-side framework and can deliver content in almost any format (HTML, JSON, XML, etc) Django provides a secure way to manage user accounts and passwords, donor information is really sensitive and needs to be secure from unauthorized users.</p>
+<p><strong>Heroku</strong></p>
+<p>Heroku is a platform as a service (Paas) that enables developers to build, run and operate applications entirely in the cloud. Heroku offers a free plan to experiment and find out what works best for you. Heroku supports the Python programming language.</p>
+<p><strong>PostgreSQL database</strong></p>
+<p>Postgres is a free and open-source database management system that is extensible and SQL compliant Postgresql source code is freely available under an open-source license Postgres has a filter clause that can be used to aggregate data based on certain criteria.
+ USER FLOW AND DESIGN NOTES</p>
+<h2 id="flow-outline">Flow Outline</h2>
+<p>Entry  point
+The user will have to search for the platform on google and download it on their system to be able to use it.</p>
+<p><strong>Steps to completion</strong></p>
+<p>The cooperative will have to signUp into the platform in case he/she is a new user by entering the user name, email, and password to access the platform and for a who is already a member will have to login by just entering the email and password to continue accessing the platform. After entering all that information to access the platform, they will go to the home page.</p>
+<p><strong>The final Interaction</strong></p>
+<p>The cooperative will have access to the group where he/she can see the groups of farmers available in the list, and add the group of new farmers by registering their group names, members in the group, group leader, and the number of the group leader. The cooperative will also be able to see the available types of beans and their prices per kg to help guide them on the products they’re collecting, they will also be able to add the new categories of beans that have entered the market.
+They will be able to record data of the beans brought by each group and send a notification to the group leader of the kgs of beans brought and the amount then make payment either in bulk by paying the groups at once or paying the group individually and finalizing everything.</p>
+<p><img alt="alt text for screen readers" src="/images/userflow.png" title="Text to show on mouseover" />.</p>
+<h2 id="system-and-environmental-requirements">System and environmental requirements</h2>
+<p>This is a general term used to describe which end-user environment will be supported. Such as browsers, operating systems, memory, and processing power, etc. 
+The system environment requirements for using agricoop are as follows:</p>
+<p><strong>Hardware</strong></p>
+<ul>
+<li>Smartphone</li>
+<li>Computer</li>
+</ul>
+<p><strong>Software</strong></p>
+<ul>
+<li>Web browser</li>
+<li>Operating system </li>
+</ul>
+<p>The operating system is the software that controls all the resources of a computer system. For example it:</p>
+<ul>
+<li>Assigns the needed hardware to programs</li>
+<li>Schedules programs for execution on the processor</li>
+<li>Allocates the memory required for each program</li>
+<li>Assigns the necessary input and output devices</li>
+<li>Manages the data and program files stored in secondary storage</li>
+<li>Maintains file directories and provides access to the data in the files</li>
+<li>Interacts with the users</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Item</strong></th>
+<th align="center"><strong>Specification</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operating system</td>
+<td align="center">Windows XP Home Edition (SP1 or later)<em>1, Windows XP Professional (SP1 or later) </em>1, Windows Server 2003 Standard Edition (SP1 or later)Windows Server 2003 Enterprise Edition (SP1 or later), Windows Server 2003 R2 Standard Edition, Windows Server 2003 R2 Enterprise Edition, Windows XP Professional 64 Edition</td>
+</tr>
+<tr>
+<td><strong>CPU</strong></td>
+<td align="center">Any processor of the same or higher specifications as recommended for your operating system,1.3 GHz or higher</td>
+</tr>
+<tr>
+<td><strong>Web Browser</strong></td>
+<td align="center">In order to authenticate the license for Desktop as well as to read HTML-format manuals, one of the following Web browsers needs to be installed on the system.Microsoft Internet Explorer Version 6.0/7.0/8.0/9.0/10.0/11.0</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td align="center">Memory capacity as recommended for your operating system The memory space must be enough for the OS and applications used.2 GB or higher</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumptions-constraints-and-dependencies">Assumptions, Constraints, and Dependencies</h2>
+<p><strong>Assumptions</strong></p>
+<ul>
+<li>Project member’s availability</li>
+<li>Project member’s performance</li>
+<li>Project member’s skills</li>
+<li>Procurements</li>
+<li>Delivery times</li>
+<li>Performance issues</li>
+</ul>
+<p><strong>Constraints</strong></p>
+<p><strong>Results</strong>: The final product will be a web platform that will help the cooperatives be able to keep records of the groups of farmers who deal with the plantation of beans and make fast payments.
+Time frame: The requirement is that the project should be completed before November 12th.</p>
+<p><strong>Resources</strong>:  As a group, we will require tools such as Github which will enable us to merge our code, and Zenhub which will guide us to allocate tasks to different individuals.</p>
+<p><strong>Activity performance</strong>: we'll be working in a group of 5 people and each individual will have tasks to work on. This will enable us to finish the task on time and the final product will be more effective.</p>
+<p><strong>Dependencies</strong>
+The first task must be completed before the second task can start.
+The second task cannot be finished before the first task is completely done.
+The second task doesn't start until the first task is started and completed.
+The first task must start before the second task is done.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.2.2
+Build Date UTC : 2021-10-24 09:32:09.453983+00:00
+-->
